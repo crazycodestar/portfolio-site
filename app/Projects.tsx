@@ -31,7 +31,7 @@ export default function Projects() {
 					image={frame2}
 					flipped
 					name="Analyze"
-					description="long description"
+					description="Effortlessly organize your ideas with our intuitive web app for seamless note-taking anytime, anywhere."
 					packages={[
 						"Solidjs",
 						"Firebase",
@@ -46,7 +46,7 @@ export default function Projects() {
 				<Project
 					image={frame3}
 					name="Analyze"
-					description="long description"
+					description="Connect with classmates, share insights, and stay updated on campus life with our student-centric social platform – your academic Twitter."
 					packages={[
 						"Nextjs[Page Dir]",
 						"PlanetScale",
