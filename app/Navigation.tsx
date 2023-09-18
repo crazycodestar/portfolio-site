@@ -6,6 +6,7 @@ import {
 	NavBarList,
 } from "@/components/ui/NavBar";
 import { Shell } from "@/components/ui/Shell";
+import Link from "next/link";
 
 export default function Navigation() {
 	return (
@@ -17,7 +18,14 @@ export default function Navigation() {
 					<NavBarListItem href="/#blog">Blog</NavBarListItem>
 					<NavBarListItem href="/#cta">CTA</NavBarListItem>
 				</NavBarList>
-				<Button className="ml-auto">View Resume</Button>
+				<Button className="ml-auto" asChild>
+					<Link
+						target="_blank"
+						href="https://drive.google.com/file/d/1-XfKDAmyUN-BWdoJbD8YGYOcJivWxPxD/view?usp=sharing"
+					>
+						View Resume
+					</Link>
+				</Button>
 			</NavBar>
 		</Shell>
 	);
