@@ -24,8 +24,8 @@ export default function Projects() {
 						"Typescript",
 						"Tailwind",
 					]}
-					githubSrc="https://github.com"
-					liveSiteSrc="vercel.com"
+					githubSrc="https://github.com/crazycodestar/instagram-checkout"
+					liveSiteSrc="https://instagram-checkout-sz7c.vercel.app/"
 				/>
 				<Project
 					image={frame2}
@@ -40,8 +40,8 @@ export default function Projects() {
 						"Typescript",
 						"Tailwind",
 					]}
-					githubSrc="github.com"
-					liveSiteSrc="vercel.com"
+					githubSrc="https://github.com/crazycodestar/solid-noter"
+					liveSiteSrc="https://solid-noter.vercel.app/"
 				/>
 				<Project
 					image={frame3}
@@ -55,8 +55,8 @@ export default function Projects() {
 						"Typescript",
 						"Tailwind",
 					]}
-					githubSrc="github.com"
-					liveSiteSrc="vercel.com"
+					githubSrc="https://github.com/crazycodestar/studyhub"
+					liveSiteSrc="https://studyhub-eta.vercel.app/"
 				/>
 				{/* <Project
 					flipped
