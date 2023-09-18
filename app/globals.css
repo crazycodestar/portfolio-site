@@ -3,25 +3,54 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+	--background: #171717;
+	--foreground: #5454543d;
+	--primary: #e78830;
+	--primary-foreground: #0e0e0e;
+	--secondary: #5454543d;
+	--secondary-foreground: #f8f8f8;
+	--border: #575757;
+
+	--radius: 0.5rem;
+
+	--radial-1: 50% 50% at 50% 50%, #e78830 0%, rgba(23, 23, 23, 0) 100%;
+	--radial-2: 50% 50% at 50% 50%, #00fff0 0%, rgba(23, 23, 23, 0) 99.99%,
+		rgba(0, 0, 0, 0) 100%;
+	--radial-3: 50% 50% at 50% 50%, #852f9a 0%, rgba(23, 23, 23, 0) 100%;
+
+	--code-primary: #f95c8b;
+	--code-secondary: #ffc744;
+	--code-accent: #00fff0;
+	--code-accent-muted: #00b8ab;
+	--code-name: rgb(60, 246, 60);
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+	:root {
+		--foreground-rgb: 255, 255, 255;
+		--background-start-rgb: 0, 0, 0;
+		--background-end-rgb: 0, 0, 0;
+	}
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@layer base {
+	body {
+		@apply bg-background;
+	}
+
+	h1 {
+		@apply font-inter text-secondary-foreground text-4xl font-semibold;
+	}
+
+	h3 {
+		@apply font-inter text-secondary-foreground text-xl font-semibold;
+	}
+
+	h5 {
+		@apply font-inter text-secondary-foreground text-xl font-bold;
+	}
+
+	p {
+		@apply font-inconsolata text-secondary-foreground;
+	}
 }
