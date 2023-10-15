@@ -13,7 +13,7 @@ interface ProjectProps {
 	name: string;
 	description: string;
 	packages: string[];
-	githubSrc: string;
+	githubSrc?: string;
 	liveSiteSrc: string;
 	flipped?: boolean;
 }
@@ -101,16 +101,18 @@ const Project = ({
 					{isIntersecting ? <Typed strings={[statics]} typeSpeed={5} /> : null}
 				</div>
 				<div className="mt-8 flex items-center gap-4">
-					<Button asChild className="gap-2">
-						<Link href={githubSrc} target="_blank">
-							<GitHubLogoIcon /> Github
-						</Link>
-					</Button>
-					<Button variant="secondary" className="gap-2">
+					<Button className="gap-2">
 						<Link href={liveSiteSrc} target="_blank">
 							Live Site
 						</Link>
 					</Button>
+					{githubSrc && (
+						<Button variant="secondary" asChild className="gap-2">
+							<Link href={githubSrc} target="_blank">
+								<GitHubLogoIcon /> Github
+							</Link>
+						</Button>
+					)}
 				</div>
 			</div>
 		</div>

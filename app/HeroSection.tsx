@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { Shell } from "@/components/ui/Shell";
-import profile from "@/public/images/profile.png";
+import profile from "@/public/images/profile.jpg";
 import { RadialAnimation } from "@/components/RadialAnimation";
 import Socials from "./Socials";
 import Typed from "react-typed";

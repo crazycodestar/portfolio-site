@@ -21,7 +21,7 @@ export default function Navigation() {
 				<Button className="ml-auto" asChild>
 					<Link
 						target="_blank"
-						href="https://drive.google.com/file/d/1-XfKDAmyUN-BWdoJbD8YGYOcJivWxPxD/view?usp=sharing"
+						href="https://drive.google.com/file/d/1Aj9Ut9wil-ruQqucmrpZmxGnuFT5GiSD/view?usp=sharing"
 					>
 						View Resume
 					</Link>
