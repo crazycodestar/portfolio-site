@@ -34,7 +34,11 @@ export default function HeroSection() {
 					</p> */}
 				</div>
 				<div className="relative">
-					<Image className="w-[15rem] h-[25rem]" src={profile} alt="profile" />
+					<Image
+						className="w-[15rem] h-[25rem] object-cover"
+						src={profile}
+						alt="profile"
+					/>
 					<div className="w-[15rem] h-[25rem] absolute -z-10 top-4 left-4 bg-primary" />
 				</div>
 			</div>

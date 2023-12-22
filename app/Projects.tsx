@@ -4,6 +4,7 @@ import frame2 from "@/public/images/Frame 2.png";
 // import frame3 from "@/public/images/Frame 3.png";
 import frame4 from "@/public/images/Frame 4.png";
 import frame5 from "@/public/images/Frame 5.png";
+import frame6 from "@/public/images/Frame 6.png";
 
 export default function Projects() {
 	return (
@@ -29,8 +30,16 @@ export default function Projects() {
 					liveSiteSrc="https://instagram-checkout-sz7c.vercel.app/"
 				/>
 				<Project
-					image={frame2}
+					image={frame6}
 					flipped
+					name="CameraCop"
+					description=" Elevate your photography experience with our handpicked selection of cutting-edge cameras. Whether you're a professional photographer or an amateur enthusiast, we have the perfect camera to help you capture life's most precious moments with precision and style."
+					packages={["AstroJs", "Analyze(My project as CMS)"]}
+					liveSiteSrc="https://astro-storefront.vercel.app/"
+					githubSrc="https://github.com/crazycodestar/astro-storefront"
+				/>
+				<Project
+					image={frame2}
 					name="Noteer"
 					description="Effortlessly organize your ideas with our intuitive web app for seamless note-taking anytime, anywhere."
 					packages={[
@@ -62,6 +71,7 @@ export default function Projects() {
 				<Project
 					image={frame5}
 					name="DriveMaps"
+					flipped
 					description="Discover Boundless Adventures with Friends. Our Platform Connects Your Journey, Lets You Stay Close, and Easily Track Locations. Your Travel, Your Tribe, Our Seamless Experience."
 					packages={["Reactjs", "Google Maps", "ShadcnUI"]}
 					liveSiteSrc="https://ogun-maps-ukv3.vercel.app/"
